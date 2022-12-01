@@ -1,0 +1,6 @@
+(library
+  (public_name tianshu-cil.inliner)
+  (name inliner)
+  (libraries tianshu-cil stdlib-shims)
+  ;(flags (:standard -w -a))
+)

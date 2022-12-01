@@ -1,0 +1,23 @@
+opam-version: "2.0"
+added: [
+  "bin/ydump" {"F:S3284512T1669350481.09"}
+  "doc/yojson" {"D"}
+  "doc/yojson/CHANGES.md" {"F:S4629T1669350481.1"}
+  "doc/yojson/LICENSE.md" {"F:S1504T1669350481.1"}
+  "doc/yojson/README.md" {"F:S2963T1669350481.1"}
+  "doc/yojson/odoc-pages/index.mld" {"F:S656T1669350481.1"}
+  "lib/yojson" {"D"}
+  "lib/yojson/META" {"F:S196T1669350481.09"}
+  "lib/yojson/dune-package" {"F:S770T1669350481.09"}
+  "lib/yojson/opam" {"F:S969T1669350481.09"}
+  "lib/yojson/yojson.a" {"F:S960244T1669350481.09"}
+  "lib/yojson/yojson.cma" {"F:S2036667T1669350481.09"}
+  "lib/yojson/yojson.cmi" {"F:S81714T1669350481.09"}
+  "lib/yojson/yojson.cmt" {"F:S3199692T1669350481.09"}
+  "lib/yojson/yojson.cmti" {"F:S430655T1669350481.09"}
+  "lib/yojson/yojson.cmx" {"F:S131432T1669350481.09"}
+  "lib/yojson/yojson.cmxa" {"F:S1074T1669350481.09"}
+  "lib/yojson/yojson.cmxs" {"F:S845976T1669350481.09"}
+  "lib/yojson/yojson.ml" {"F:S542437T1669350481.09"}
+  "lib/yojson/yojson.mli" {"F:S75147T1669350481.09"}
+]

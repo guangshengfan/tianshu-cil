@@ -1,0 +1,6 @@
+(library
+  (public_name tianshu-cil.canonicalize)
+  (name canonicalize)
+  (libraries tianshu-cil stdlib-shims)
+  ;(flags (:standard -w -a))
+)

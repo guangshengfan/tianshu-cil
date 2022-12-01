@@ -1,0 +1,6 @@
+(library
+  (public_name tianshu-cil.zrapp)
+  (name zrapp)
+  (libraries tianshu-cil tianshu-cil.liveness stdlib-shims)
+  ;(flags (:standard -w -a ))
+)

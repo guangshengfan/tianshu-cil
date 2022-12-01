@@ -1,0 +1,60 @@
+(lang dune 3.5)
+(name ocamlc-loc)
+(version 3.5.0)
+(sections (lib .) (libexec .) (doc ../../doc/ocamlc-loc))
+(files
+ (lib
+  (META
+   dune-package
+   lexer.ml
+   lexer.mli
+   ocamlc_loc.a
+   ocamlc_loc.cma
+   ocamlc_loc.cmi
+   ocamlc_loc.cmt
+   ocamlc_loc.cmti
+   ocamlc_loc.cmx
+   ocamlc_loc.cmxa
+   ocamlc_loc.ml
+   ocamlc_loc.mli
+   ocamlc_loc__.cmi
+   ocamlc_loc__.cmt
+   ocamlc_loc__.cmx
+   ocamlc_loc__.ml
+   ocamlc_loc__Lexer.cmi
+   ocamlc_loc__Lexer.cmt
+   ocamlc_loc__Lexer.cmti
+   ocamlc_loc__Lexer.cmx
+   opam))
+ (libexec (ocamlc_loc.cmxs))
+ (doc (CHANGES.md LICENSE.md README.md)))
+(library
+ (name ocamlc-loc)
+ (kind normal)
+ (archives (byte ocamlc_loc.cma) (native ocamlc_loc.cmxa))
+ (plugins (byte ocamlc_loc.cma) (native ocamlc_loc.cmxs))
+ (native_archives ocamlc_loc.a)
+ (requires dyn)
+ (main_module_name Ocamlc_loc)
+ (modes byte native)
+ (modules
+  (wrapped
+   (main_module_name Ocamlc_loc)
+   (modules
+    ((name Lexer)
+     (obj_name ocamlc_loc__Lexer)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Ocamlc_loc)
+     (obj_name ocamlc_loc)
+     (visibility public)
+     (impl)
+     (intf)))
+   (alias_module
+    (name Ocamlc_loc__)
+    (obj_name ocamlc_loc__)
+    (visibility public)
+    (kind alias)
+    (impl))
+   (wrapped true))))

@@ -1,0 +1,5 @@
+(library
+  (public_name tianshu-cil.heapify)
+  (name heapify)
+  (libraries tianshu-cil stdlib-shims)
+)

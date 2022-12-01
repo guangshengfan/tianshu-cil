@@ -1,0 +1,65 @@
+(lang dune 3.5)
+(name ocamlformat-rpc-lib)
+(version 0.24.1)
+(sections (lib .) (libexec .) (doc ../../doc/ocamlformat-rpc-lib))
+(files
+ (lib
+  (IO.ml
+   META
+   dune-package
+   ocamlformat_rpc_lib.a
+   ocamlformat_rpc_lib.cma
+   ocamlformat_rpc_lib.cmi
+   ocamlformat_rpc_lib.cmt
+   ocamlformat_rpc_lib.cmti
+   ocamlformat_rpc_lib.cmx
+   ocamlformat_rpc_lib.cmxa
+   ocamlformat_rpc_lib.ml
+   ocamlformat_rpc_lib.mli
+   ocamlformat_rpc_lib__.cmi
+   ocamlformat_rpc_lib__.cmt
+   ocamlformat_rpc_lib__.cmx
+   ocamlformat_rpc_lib__.ml
+   ocamlformat_rpc_lib__IO.cmi
+   ocamlformat_rpc_lib__IO.cmt
+   ocamlformat_rpc_lib__IO.cmx
+   ocamlformat_rpc_lib__Protocol.cmi
+   ocamlformat_rpc_lib__Protocol.cmt
+   ocamlformat_rpc_lib__Protocol.cmti
+   ocamlformat_rpc_lib__Protocol.cmx
+   opam
+   protocol.ml
+   protocol.mli))
+ (libexec (ocamlformat_rpc_lib.cmxs))
+ (doc (CHANGES.md LICENSE.md README.md)))
+(library
+ (name ocamlformat-rpc-lib)
+ (kind normal)
+ (archives (byte ocamlformat_rpc_lib.cma) (native ocamlformat_rpc_lib.cmxa))
+ (plugins (byte ocamlformat_rpc_lib.cma) (native ocamlformat_rpc_lib.cmxs))
+ (native_archives ocamlformat_rpc_lib.a)
+ (requires csexp)
+ (main_module_name Ocamlformat_rpc_lib)
+ (modes byte native)
+ (modules
+  (wrapped
+   (main_module_name Ocamlformat_rpc_lib)
+   (modules
+    ((name IO) (obj_name ocamlformat_rpc_lib__IO) (visibility public) (impl))
+    ((name Ocamlformat_rpc_lib)
+     (obj_name ocamlformat_rpc_lib)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Protocol)
+     (obj_name ocamlformat_rpc_lib__Protocol)
+     (visibility public)
+     (impl)
+     (intf)))
+   (alias_module
+    (name Ocamlformat_rpc_lib__)
+    (obj_name ocamlformat_rpc_lib__)
+    (visibility public)
+    (kind alias)
+    (impl))
+   (wrapped true))))

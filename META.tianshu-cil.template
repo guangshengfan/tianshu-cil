@@ -1,0 +1,11 @@
+# DUNE_GEN
+
+package "default-features" (
+requires="tianshu-cil.dataslicing tianshu-cil.liveness tianshu-cil.canonicalize tianshu-cil.ccl tianshu-cil.cqualann tianshu-cil.epicenter tianshu-cil.heapify tianshu-cil.inliner tianshu-cil.llvm tianshu-cil.logcalls tianshu-cil.logwrites tianshu-cil.oneret tianshu-cil.partial tianshu-cil.sfi tianshu-cil.simplemem tianshu-cil.simplify  tianshu-cil.pta tianshu-cil.zrapp "
+version = "2.0.0"
+)
+
+package "all-features" (
+requires="tianshu-cil.dataslicing tianshu-cil.liveness tianshu-cil.canonicalize tianshu-cil.ccl tianshu-cil.cqualann tianshu-cil.epicenter tianshu-cil.heapify tianshu-cil.inliner tianshu-cil.llvm tianshu-cil.logcalls tianshu-cil.logwrites tianshu-cil.oneret tianshu-cil.partial tianshu-cil.sfi tianshu-cil.simplemem tianshu-cil.simplify  tianshu-cil.pta tianshu-cil.zrapp "
+version = "2.0.0"
+)

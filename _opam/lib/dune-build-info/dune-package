@@ -1,0 +1,57 @@
+(lang dune 3.5)
+(name dune-build-info)
+(version 3.5.0)
+(sections (lib .) (libexec .) (doc ../../doc/dune-build-info))
+(files
+ (lib
+  (META
+   build_info.a
+   build_info.cma
+   build_info.cmi
+   build_info.cmt
+   build_info.cmti
+   build_info.cmx
+   build_info.cmxa
+   build_info.ml
+   build_info.mli
+   build_info__.cmi
+   build_info__.cmt
+   build_info__.cmx
+   build_info__.ml
+   build_info__Build_info_data.cmi
+   build_info__Build_info_data.cmti
+   build_info_data.mli
+   dune-package
+   opam))
+ (libexec (build_info.cmxs))
+ (doc (CHANGES.md LICENSE.md README.md)))
+(library
+ (name dune-build-info)
+ (kind normal)
+ (archives (byte build_info.cma) (native build_info.cmxa))
+ (plugins (byte build_info.cma) (native build_info.cmxs))
+ (native_archives build_info.a)
+ (main_module_name Build_info)
+ (modes byte native)
+ (modules
+  (wrapped
+   (main_module_name Build_info)
+   (modules
+    ((name Build_info)
+     (obj_name build_info)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Build_info_data)
+     (obj_name build_info__Build_info_data)
+     (visibility public)
+     (intf)))
+   (alias_module
+    (name Build_info__)
+    (obj_name build_info__)
+    (visibility public)
+    (kind alias)
+    (impl))
+   (wrapped true)))
+ (special_builtin_support
+  (build_info (data_module Build_info_data) (api_version 1))))

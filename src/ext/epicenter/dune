@@ -1,0 +1,5 @@
+(library
+  (public_name tianshu-cil.epicenter)
+  (name epicenter)
+  (libraries tianshu-cil tianshu-cil.callgraph stdlib-shims)
+)

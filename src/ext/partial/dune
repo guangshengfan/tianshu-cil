@@ -1,0 +1,5 @@
+(library
+  (public_name tianshu-cil.partial)
+  (name partial)
+  (libraries tianshu-cil tianshu-cil.pta stdlib-shims)
+)

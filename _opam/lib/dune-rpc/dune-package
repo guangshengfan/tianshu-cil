@@ -1,0 +1,203 @@
+(lang dune 3.5)
+(name dune-rpc)
+(version 3.5.0)
+(sections (lib .) (libexec .) (doc ../../doc/dune-rpc))
+(files
+ (lib
+  (META
+   dune-package
+   dune_rpc.a
+   dune_rpc.cma
+   dune_rpc.cmi
+   dune_rpc.cmt
+   dune_rpc.cmti
+   dune_rpc.cmx
+   dune_rpc.cmxa
+   dune_rpc.ml
+   dune_rpc.mli
+   opam
+   private/conv.ml
+   private/conv.mli
+   private/dbus_address.ml
+   private/dbus_address.mli
+   private/dune_rpc_private.a
+   private/dune_rpc_private.cma
+   private/dune_rpc_private.cmi
+   private/dune_rpc_private.cmt
+   private/dune_rpc_private.cmti
+   private/dune_rpc_private.cmx
+   private/dune_rpc_private.cmxa
+   private/dune_rpc_private.ml
+   private/dune_rpc_private.mli
+   private/dune_rpc_private__.cmi
+   private/dune_rpc_private__.cmt
+   private/dune_rpc_private__.cmx
+   private/dune_rpc_private__.ml
+   private/dune_rpc_private__Conv.cmi
+   private/dune_rpc_private__Conv.cmt
+   private/dune_rpc_private__Conv.cmti
+   private/dune_rpc_private__Conv.cmx
+   private/dune_rpc_private__Dbus_address.cmi
+   private/dune_rpc_private__Dbus_address.cmt
+   private/dune_rpc_private__Dbus_address.cmti
+   private/dune_rpc_private__Dbus_address.cmx
+   private/dune_rpc_private__Exported_types.cmi
+   private/dune_rpc_private__Exported_types.cmt
+   private/dune_rpc_private__Exported_types.cmti
+   private/dune_rpc_private__Exported_types.cmx
+   private/dune_rpc_private__Fiber_intf.cmi
+   private/dune_rpc_private__Fiber_intf.cmt
+   private/dune_rpc_private__Fiber_intf.cmx
+   private/dune_rpc_private__Import.cmi
+   private/dune_rpc_private__Import.cmt
+   private/dune_rpc_private__Import.cmx
+   private/dune_rpc_private__Menu.cmi
+   private/dune_rpc_private__Menu.cmt
+   private/dune_rpc_private__Menu.cmti
+   private/dune_rpc_private__Menu.cmx
+   private/dune_rpc_private__Procedures.cmi
+   private/dune_rpc_private__Procedures.cmt
+   private/dune_rpc_private__Procedures.cmti
+   private/dune_rpc_private__Procedures.cmx
+   private/dune_rpc_private__Registry.cmi
+   private/dune_rpc_private__Registry.cmt
+   private/dune_rpc_private__Registry.cmti
+   private/dune_rpc_private__Registry.cmx
+   private/dune_rpc_private__Types.cmi
+   private/dune_rpc_private__Types.cmt
+   private/dune_rpc_private__Types.cmti
+   private/dune_rpc_private__Types.cmx
+   private/dune_rpc_private__Versioned.cmi
+   private/dune_rpc_private__Versioned.cmt
+   private/dune_rpc_private__Versioned.cmti
+   private/dune_rpc_private__Versioned.cmx
+   private/dune_rpc_private__Where.cmi
+   private/dune_rpc_private__Where.cmt
+   private/dune_rpc_private__Where.cmti
+   private/dune_rpc_private__Where.cmx
+   private/exported_types.ml
+   private/exported_types.mli
+   private/fiber_intf.ml
+   private/import.ml
+   private/menu.ml
+   private/menu.mli
+   private/procedures.ml
+   private/procedures.mli
+   private/registry.ml
+   private/registry.mli
+   private/types.ml
+   private/types.mli
+   private/versioned.ml
+   private/versioned.mli
+   private/where.ml
+   private/where.mli))
+ (libexec (dune_rpc.cmxs private/dune_rpc_private.cmxs))
+ (doc (CHANGES.md LICENSE.md README.md)))
+(library
+ (name dune-rpc)
+ (kind normal)
+ (synopsis "dune rpc client and protocol")
+ (archives (byte dune_rpc.cma) (native dune_rpc.cmxa))
+ (plugins (byte dune_rpc.cma) (native dune_rpc.cmxs))
+ (native_archives dune_rpc.a)
+ (requires
+  ordering
+  dyn
+  pp
+  stdune.filesystem_stubs
+  stdune
+  csexp
+  xdg
+  (re_export dune-rpc.private))
+ (main_module_name Dune_rpc)
+ (modes byte native)
+ (modules
+  (singleton
+   (name Dune_rpc)
+   (obj_name dune_rpc)
+   (visibility public)
+   (impl)
+   (intf))))
+(library
+ (name dune-rpc.private)
+ (kind normal)
+ (synopsis "for internal use only")
+ (archives
+  (byte private/dune_rpc_private.cma)
+  (native private/dune_rpc_private.cmxa))
+ (plugins
+  (byte private/dune_rpc_private.cma)
+  (native private/dune_rpc_private.cmxs))
+ (native_archives private/dune_rpc_private.a)
+ (requires ordering dyn pp stdune.filesystem_stubs stdune csexp xdg)
+ (main_module_name Dune_rpc_private)
+ (modes byte native)
+ (modules
+  (wrapped
+   (main_module_name Dune_rpc_private)
+   (modules
+    ((name Conv)
+     (obj_name dune_rpc_private__Conv)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Dbus_address)
+     (obj_name dune_rpc_private__Dbus_address)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Dune_rpc_private)
+     (obj_name dune_rpc_private)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Exported_types)
+     (obj_name dune_rpc_private__Exported_types)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Fiber_intf)
+     (obj_name dune_rpc_private__Fiber_intf)
+     (visibility public)
+     (impl))
+    ((name Import)
+     (obj_name dune_rpc_private__Import)
+     (visibility public)
+     (impl))
+    ((name Menu)
+     (obj_name dune_rpc_private__Menu)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Procedures)
+     (obj_name dune_rpc_private__Procedures)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Registry)
+     (obj_name dune_rpc_private__Registry)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Types)
+     (obj_name dune_rpc_private__Types)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Versioned)
+     (obj_name dune_rpc_private__Versioned)
+     (visibility public)
+     (impl)
+     (intf))
+    ((name Where)
+     (obj_name dune_rpc_private__Where)
+     (visibility public)
+     (impl)
+     (intf)))
+   (alias_module
+    (name Dune_rpc_private__)
+    (obj_name dune_rpc_private__)
+    (visibility public)
+    (kind alias)
+    (impl))
+   (wrapped true))))

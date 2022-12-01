@@ -1,0 +1,325 @@
+# dune build -p cil -j 63 @install
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root:
+# /home/fgs/Desktop/tianshu-cil/_opam/.opam-switch/build/cil.2.0.0
+$ /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -config > /opam-tmp/dune_fe9a7d_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path =
+#      Some External "/home/fgs/Desktop/tianshu-cil/_opam/lib/toplevel"
+#  ; ocaml_bin = External "/home/fgs/Desktop/tianshu-cil/_opam/bin"
+#  ; ocaml = Ok External "/home/fgs/Desktop/tianshu-cil/_opam/bin/ocaml"
+#  ; ocamlc = External "/home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok External "/home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok External "/home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok External "/home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/home/fgs/Desktop/tianshu-cil/_opam/lib"
+#        ; "DUNE_OCAML_STDLIB" :
+#            "/home/fgs/Desktop/tianshu-cil/_opam/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/home/fgs/Desktop/tianshu-cil/_opam/.opam-switch/build/cil.2.0.0"
+#        ; "INSIDE_DUNE" :
+#            "/home/fgs/Desktop/tianshu-cil/_opam/.opam-switch/build/cil.2.0.0/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/home/fgs/Desktop/tianshu-cil/_opam/.opam-switch/build/cil.2.0.0/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/home/fgs/Desktop/tianshu-cil/_opam/.opam-switch/build/cil.2.0.0/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/home/fgs/Desktop/tianshu-cil/_opam/.opam-switch/build/cil.2.0.0/_build/install/default/lib/toplevel"
+#        }
+#  ; findlib_paths = [ External "/home/fgs/Desktop/tianshu-cil/_opam/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.14.0"
+#      ; standard_library_default =
+#          "/home/fgs/Desktop/tianshu-cil/_opam/lib/ocaml"
+#      ; standard_library = "/home/fgs/Desktop/tianshu-cil/_opam/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-ldl"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-ldl" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+# Promoting "_build/default/cil.opam" to "cil.opam"
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlyacc src/formatparse.mly)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamllex -q -o src/formatlex.ml src/formatlex.mll)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -49 -nopervasives -nostdlib -g -bin-annot -I src/.cil.objs/byte -no-alias-deps -o src/.cil.objs/byte/cil__.cmo -c -impl src/cil__.ml-gen)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ocamlutil/alpha.mli) > _build/default/src/.cil.objs/alpha.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/blockinggraph/blockinggraph.mli) > _build/default/src/.cil.objs/blockinggraph.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/frontc/cabs.ml) > _build/default/src/.cil.objs/cabs.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ocamlutil/alpha.ml) > _build/default/src/.cil.objs/alpha.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ocamlutil/bitmap.mli) > _build/default/src/.cil.objs/bitmap.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/frontc/cabs2cil.mli) > _build/default/src/.cil.objs/cabs2cil.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ocamlutil/bitmap.ml) > _build/default/src/.cil.objs/bitmap.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/frontc/cabsvisit.mli) > _build/default/src/.cil.objs/cabsvisit.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/zrapp/availexps.ml) > _build/default/src/.cil.objs/availexps.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/frontc/cabshelper.ml) > _build/default/src/.cil.objs/cabshelper.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/canonicalize/canonicalize.mli) > _build/default/src/.cil.objs/canonicalize.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/callgraph/callgraph.mli) > _build/default/src/.cil.objs/callgraph.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/zrapp/availexpslv.ml) > _build/default/src/.cil.objs/availexpslv.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/cfg.mli) > _build/default/src/.cil.objs/cfg.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/zrapp/zrapp.ml) > _build/default/src/.cil.objs/zrapp.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/ccl/ccl.mli) > _build/default/src/.cil.objs/ccl.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/callgraph/callgraph.ml) > _build/default/src/.cil.objs/callgraph.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/check.mli) > _build/default/src/.cil.objs/check.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/canonicalize/canonicalize.ml) > _build/default/src/.cil.objs/canonicalize.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/blockinggraph/blockinggraph.ml) > _build/default/src/.cil.objs/blockinggraph.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/cilint.mli) > _build/default/src/.cil.objs/cilint.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/frontc/cabsvisit.ml) > _build/default/src/.cil.objs/cabsvisit.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/cillower.mli) > _build/default/src/.cil.objs/cillower.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/cillower.ml) > _build/default/src/.cil.objs/cillower.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/zrapp/ciltools.mli) > _build/default/src/.cil.objs/ciltools.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/cfg.ml) > _build/default/src/.cil.objs/cfg.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/zrapp/ciltools.ml) > _build/default/src/.cil.objs/ciltools.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/frontc/clexer.mli) > _build/default/src/.cil.objs/clexer.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/cilutil.ml) > _build/default/src/.cil.objs/cilutil.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/cilint.ml) > _build/default/src/.cil.objs/cilint.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/cilversion.ml) > _build/default/src/.cil.objs/cilversion.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ocamlutil/clist.mli) > _build/default/src/.cil.objs/clist.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ocamlutil/clist.ml) > _build/default/src/.cil.objs/clist.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/dataslicing/dataslicing.mli) > _build/default/src/.cil.objs/dataslicing.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/dataflow.mli) > _build/default/src/.cil.objs/dataflow.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/ccl/ccl.ml) > _build/default/src/.cil.objs/ccl.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/check.ml) > _build/default/src/.cil.objs/check.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ocamlutil/errormsg.mli) > _build/default/src/.cil.objs/errormsg.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/epicenter/epicenter.ml) > _build/default/src/.cil.objs/epicenter.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/dominators.mli) > _build/default/src/.cil.objs/dominators.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/cqualann/cqualann.ml) > _build/default/src/.cil.objs/cqualann.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/escape.ml) > _build/default/src/.cil.objs/escape.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/dataslicing/dataslicing.ml) > _build/default/src/.cil.objs/dataslicing.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/zrapp/deadcodeelim.ml) > _build/default/src/.cil.objs/deadcodeelim.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/dominators.ml) > _build/default/src/.cil.objs/dominators.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/escape.mli) > _build/default/src/.cil.objs/escape.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/frontc/cprint.ml) > _build/default/src/.cil.objs/cprint.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ocamlutil/errormsg.ml) > _build/default/src/.cil.objs/errormsg.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/dataflow.ml) > _build/default/src/.cil.objs/dataflow.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/expcompare.ml) > _build/default/src/.cil.objs/expcompare.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/feature.ml) > _build/default/src/.cil.objs/feature.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/feature.mli) > _build/default/src/.cil.objs/feature.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/frontc/frontc.mli) > _build/default/src/.cil.objs/frontc.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/formatparse.mli) > _build/default/src/.cil.objs/formatparse.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/formatcil.ml) > _build/default/src/.cil.objs/formatcil.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/formatcil.mli) > _build/default/src/.cil.objs/formatcil.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/pta/golf.mli) > _build/default/src/.cil.objs/golf.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/frontc/frontc.ml) > _build/default/src/.cil.objs/frontc.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ocamlutil/growArray.mli) > _build/default/src/.cil.objs/growArray.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/partial/heap.ml) > _build/default/src/.cil.objs/heap.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ocamlutil/inthash.mli) > _build/default/src/.cil.objs/inthash.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/heapify/heapify.ml) > _build/default/src/.cil.objs/heapify.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/formatlex.ml) > _build/default/src/.cil.objs/formatlex.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/frontc/lexerhack.ml) > _build/default/src/.cil.objs/lexerhack.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ocamlutil/growArray.ml) > _build/default/src/.cil.objs/growArray.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/libmaincil.ml) > _build/default/src/.cil.objs/libmaincil.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ocamlutil/inthash.ml) > _build/default/src/.cil.objs/inthash.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/llvm/llvm.ml) > _build/default/src/.cil.objs/llvm.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/formatparse.ml) > _build/default/src/.cil.objs/formatparse.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/pta/golf.ml) > _build/default/src/.cil.objs/golf.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/inliner/inliner.ml) > _build/default/src/.cil.objs/inliner.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/liveness/liveness.ml) > _build/default/src/.cil.objs/liveness.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/llvm/llvmgen.ml) > _build/default/src/.cil.objs/llvmgen.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/llvm/llvmssa.ml) > _build/default/src/.cil.objs/llvmssa.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/llvm/llvmutils.ml) > _build/default/src/.cil.objs/llvmutils.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/logcalls/logcalls.mli) > _build/default/src/.cil.objs/logcalls.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/logcalls/logcalls.ml) > _build/default/src/.cil.objs/logcalls.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/logwrites/logwrites.ml) > _build/default/src/.cil.objs/logwrites.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ocamlutil/longarray.mli) > _build/default/src/.cil.objs/longarray.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ocamlutil/longarray.ml) > _build/default/src/.cil.objs/longarray.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/machdepenv.ml) > _build/default/src/.cil.objs/machdepenv.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/frontc/cabs2cil.ml) > _build/default/src/.cil.objs/cabs2cil.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/mergecil.mli) > _build/default/src/.cil.objs/mergecil.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/pta/olf.mli) > _build/default/src/.cil.objs/olf.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/oneret/oneret.mli) > _build/default/src/.cil.objs/oneret.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/frontc/patch.mli) > _build/default/src/.cil.objs/patch.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/oneret/oneret.ml) > _build/default/src/.cil.objs/oneret.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/partial/partial.ml) > _build/default/src/.cil.objs/partial.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ocamlutil/pretty.mli) > _build/default/src/.cil.objs/pretty.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/pta/ptranal.mli) > _build/default/src/.cil.objs/ptranal.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/mergecil.ml) > _build/default/src/.cil.objs/mergecil.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/rmtmps.mli) > _build/default/src/.cil.objs/rmtmps.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/frontc/patch.ml) > _build/default/src/.cil.objs/patch.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/pta/ptranal.ml) > _build/default/src/.cil.objs/ptranal.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/pta/olf.ml) > _build/default/src/.cil.objs/olf.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/simplify/simplify.mli) > _build/default/src/.cil.objs/simplify.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/pta/setp.mli) > _build/default/src/.cil.objs/setp.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/zrapp/reachingdefs.ml) > _build/default/src/.cil.objs/reachingdefs.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ocamlutil/stats.mli) > _build/default/src/.cil.objs/stats.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/simplemem/simplemem.ml) > _build/default/src/.cil.objs/simplemem.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ocamlutil/pretty.ml) > _build/default/src/.cil.objs/pretty.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/pta/setp.ml) > _build/default/src/.cil.objs/setp.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/sfi/sfi.ml) > _build/default/src/.cil.objs/sfi.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/simplify/simplify.ml) > _build/default/src/.cil.objs/simplify.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ocamlutil/stats.ml) > _build/default/src/.cil.objs/stats.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/pta/steensgaard.mli) > _build/default/src/.cil.objs/steensgaard.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ocamlutil/trace.mli) > _build/default/src/.cil.objs/trace.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/rmtmps.ml) > _build/default/src/.cil.objs/rmtmps.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/pta/uref.mli) > _build/default/src/.cil.objs/uref.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/zrapp/rmciltmps.ml) > _build/default/src/.cil.objs/rmciltmps.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ocamlutil/trace.ml) > _build/default/src/.cil.objs/trace.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ocamlutil/util.mli) > _build/default/src/.cil.objs/util.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/pta/uref.ml) > _build/default/src/.cil.objs/uref.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/liveness/usedef.ml) > _build/default/src/.cil.objs/usedef.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/frontc/whitetrack.mli) > _build/default/src/.cil.objs/whitetrack.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ocamlutil/util.ml) > _build/default/src/.cil.objs/util.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/ext/pta/steensgaard.ml) > _build/default/src/.cil.objs/steensgaard.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/ext/zrapp/zrapp.mli) > _build/default/src/.cil.objs/zrapp.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/frontc/whitetrack.ml) > _build/default/src/.cil.objs/whitetrack.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -intf src/cil.mli) > _build/default/src/.cil.objs/cil.mli.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Cilint.cmi -c -intf src/cilint.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Cilutil.cmo -c -impl src/cilutil.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Cilversion.cmo -c -impl src/cilversion.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Escape.cmi -c -intf src/escape.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Bitmap.cmi -c -intf src/ocamlutil/bitmap.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -49 -nopervasives -nostdlib -g -I src/.cil.objs/byte -I src/.cil.objs/native -intf-suffix .ml-gen -no-alias-deps -o src/.cil.objs/native/cil__.cmx -c -impl src/cil__.ml-gen)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Cabs.cmo -c -impl src/frontc/cabs.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Inthash.cmi -c -intf src/ocamlutil/inthash.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Heap.cmo -c -impl src/ext/partial/heap.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Stats.cmi -c -intf src/ocamlutil/stats.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Pretty.cmi -c -intf src/ocamlutil/pretty.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Steensgaard.cmi -c -intf src/ext/pta/steensgaard.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Setp.cmi -c -intf src/ext/pta/setp.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Uref.cmi -c -intf src/ext/pta/uref.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Util.cmi -c -intf src/ocamlutil/util.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Whitetrack.cmi -c -intf src/frontc/whitetrack.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Cilint.cmo -c -impl src/cilint.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Patch.cmi -c -intf src/frontc/patch.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -opaque -open Cil__ -o src/.cil.objs/byte/cil__Clexer.cmi -c -intf src/frontc/clexer.mli)
+> File "src/frontc/clexer.mli", line 49, characters 30-43:
+> 49 | val initial: Lexing.lexbuf -> Cparser.token
+>                                    ^^^^^^^^^^^^^
+> Error: Unbound module Cparser
+[2]
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Escape.cmo -c -impl src/escape.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamldep.opt -modules -impl src/cil.ml) > _build/default/src/.cil.objs/cil.ml.d
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Alpha.cmi -c -intf src/ocamlutil/alpha.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Cabsvisit.cmi -c -intf src/frontc/cabsvisit.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Bitmap.cmo -c -impl src/ocamlutil/bitmap.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Cilutil.cmx -c -impl src/cilutil.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Cilversion.cmx -c -impl src/cilversion.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Clist.cmi -c -intf src/ocamlutil/clist.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Trace.cmi -c -intf src/ocamlutil/trace.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Longarray.cmi -c -intf src/ocamlutil/longarray.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Cabs.cmx -c -impl src/frontc/cabs.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Inthash.cmo -c -impl src/ocamlutil/inthash.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__GrowArray.cmi -c -intf src/ocamlutil/growArray.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Errormsg.cmi -c -intf src/ocamlutil/errormsg.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Stats.cmo -c -impl src/ocamlutil/stats.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Escape.cmx -c -impl src/escape.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Uref.cmo -c -impl src/ext/pta/uref.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Heap.cmx -c -impl src/ext/partial/heap.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Bitmap.cmx -c -impl src/ocamlutil/bitmap.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Trace.cmo -c -impl src/ocamlutil/trace.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Uref.cmx -c -impl src/ext/pta/uref.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Clist.cmo -c -impl src/ocamlutil/clist.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Stats.cmx -c -impl src/ocamlutil/stats.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Cilint.cmx -c -impl src/cilint.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Setp.cmo -c -impl src/ext/pta/setp.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Inthash.cmx -c -impl src/ocamlutil/inthash.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Lexerhack.cmo -c -impl src/frontc/lexerhack.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Longarray.cmo -c -impl src/ocamlutil/longarray.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Util.cmo -c -impl src/ocamlutil/util.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Alpha.cmo -c -impl src/ocamlutil/alpha.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Cabshelper.cmo -c -impl src/frontc/cabshelper.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__GrowArray.cmo -c -impl src/ocamlutil/growArray.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Errormsg.cmo -c -impl src/ocamlutil/errormsg.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Pretty.cmo -c -impl src/ocamlutil/pretty.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Cprint.cmo -c -impl src/frontc/cprint.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Setp.cmx -c -impl src/ext/pta/setp.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Steensgaard.cmo -c -impl src/ext/pta/steensgaard.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Pretty.cmx -c -impl src/ocamlutil/pretty.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Whitetrack.cmo -c -impl src/frontc/whitetrack.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.machdepConfigure.eobjs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/dune-configurator -no-alias-deps -o src/.machdepConfigure.eobjs/byte/dune__exe__MachdepConfigure.cmi -c -intf src/machdepConfigure.mli)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Trace.cmx -c -impl src/ocamlutil/trace.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Clist.cmx -c -impl src/ocamlutil/clist.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Cabsvisit.cmo -c -impl src/frontc/cabsvisit.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -g -I src/.machdepConfigure.eobjs/byte -I src/.machdepConfigure.eobjs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/dune-configurator -intf-suffix .ml -no-alias-deps -o src/.machdepConfigure.eobjs/native/dune__exe__MachdepConfigure.cmx -c -impl src/machdepConfigure.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Errormsg.cmx -c -impl src/ocamlutil/errormsg.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlc.opt -w -40 -w -a -g -bin-annot -I src/.cil.objs/byte -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/byte/cil__Patch.cmo -c -impl src/frontc/patch.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Lexerhack.cmx -c -impl src/frontc/lexerhack.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Util.cmx -c -impl src/ocamlutil/util.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Longarray.cmx -c -impl src/ocamlutil/longarray.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Alpha.cmx -c -impl src/ocamlutil/alpha.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__GrowArray.cmx -c -impl src/ocamlutil/growArray.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Cabshelper.cmx -c -impl src/frontc/cabshelper.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Whitetrack.cmx -c -impl src/frontc/whitetrack.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Steensgaard.cmx -c -impl src/ext/pta/steensgaard.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -g -o src/machdepConfigure.exe /home/fgs/Desktop/tianshu-cil/_opam/lib/ocaml/unix.cmxa -I /home/fgs/Desktop/tianshu-cil/_opam/lib/ocaml /home/fgs/Desktop/tianshu-cil/_opam/lib/csexp/csexp.cmxa /home/fgs/Desktop/tianshu-cil/_opam/lib/dune-configurator/configurator.cmxa src/.machdepConfigure.eobjs/native/dune__exe__MachdepConfigure.cmx)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Cabsvisit.cmx -c -impl src/frontc/cabsvisit.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Cprint.cmx -c -impl src/frontc/cprint.ml)
+$ (cd _build/default && /home/fgs/Desktop/tianshu-cil/_opam/bin/ocamlopt.opt -w -40 -w -a -g -I src/.cil.objs/byte -I src/.cil.objs/native -I /home/fgs/Desktop/tianshu-cil/_opam/lib/findlib -I /home/fgs/Desktop/tianshu-cil/_opam/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -open Cil__ -o src/.cil.objs/native/cil__Patch.cmx -c -impl src/frontc/patch.ml)
+$ (cd _build/default/src && ./machdepConfigure.exe)

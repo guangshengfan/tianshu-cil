@@ -1,0 +1,217 @@
+version = "2.0.0"
+description = ""
+requires = "dynlink findlib num stdlib-shims str unix"
+archive(byte) = "tianshuCil.cma"
+archive(native) = "tianshuCil.cmxa"
+plugin(byte) = "tianshuCil.cma"
+plugin(native) = "tianshuCil.cmxs"
+package "blockinggraph" (
+  directory = "blockinggraph"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "blockinggraph.cma"
+  archive(native) = "blockinggraph.cmxa"
+  plugin(byte) = "blockinggraph.cma"
+  plugin(native) = "blockinggraph.cmxs"
+)
+package "callgraph" (
+  directory = "callgraph"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "callgraph.cma"
+  archive(native) = "callgraph.cmxa"
+  plugin(byte) = "callgraph.cma"
+  plugin(native) = "callgraph.cmxs"
+)
+package "canonicalize" (
+  directory = "canonicalize"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "canonicalize.cma"
+  archive(native) = "canonicalize.cmxa"
+  plugin(byte) = "canonicalize.cma"
+  plugin(native) = "canonicalize.cmxs"
+)
+package "ccl" (
+  directory = "ccl"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil tianshu-cil.partial"
+  archive(byte) = "ccl.cma"
+  archive(native) = "ccl.cmxa"
+  plugin(byte) = "ccl.cma"
+  plugin(native) = "ccl.cmxs"
+)
+package "cqualann" (
+  directory = "cqualann"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "cqualann.cma"
+  archive(native) = "cqualann.cmxa"
+  plugin(byte) = "cqualann.cma"
+  plugin(native) = "cqualann.cmxs"
+)
+package "dataslicing" (
+  directory = "dataslicing"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "dataslicing.cma"
+  archive(native) = "dataslicing.cmxa"
+  plugin(byte) = "dataslicing.cma"
+  plugin(native) = "dataslicing.cmxs"
+)
+package "epicenter" (
+  directory = "epicenter"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil tianshu-cil.callgraph"
+  archive(byte) = "epicenter.cma"
+  archive(native) = "epicenter.cmxa"
+  plugin(byte) = "epicenter.cma"
+  plugin(native) = "epicenter.cmxs"
+)
+package "heapify" (
+  directory = "heapify"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "heapify.cma"
+  archive(native) = "heapify.cmxa"
+  plugin(byte) = "heapify.cma"
+  plugin(native) = "heapify.cmxs"
+)
+package "inliner" (
+  directory = "inliner"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "inliner.cma"
+  archive(native) = "inliner.cmxa"
+  plugin(byte) = "inliner.cma"
+  plugin(native) = "inliner.cmxs"
+)
+package "liveness" (
+  directory = "liveness"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "liveness.cma"
+  archive(native) = "liveness.cmxa"
+  plugin(byte) = "liveness.cma"
+  plugin(native) = "liveness.cmxs"
+)
+package "llvm" (
+  directory = "llvm"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "llvm.cma"
+  archive(native) = "llvm.cmxa"
+  plugin(byte) = "llvm.cma"
+  plugin(native) = "llvm.cmxs"
+)
+package "logcalls" (
+  directory = "logcalls"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "logcalls.cma"
+  archive(native) = "logcalls.cmxa"
+  plugin(byte) = "logcalls.cma"
+  plugin(native) = "logcalls.cmxs"
+)
+package "logwrites" (
+  directory = "logwrites"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "logwrites.cma"
+  archive(native) = "logwrites.cmxa"
+  plugin(byte) = "logwrites.cma"
+  plugin(native) = "logwrites.cmxs"
+)
+package "oneret" (
+  directory = "oneret"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "oneret.cma"
+  archive(native) = "oneret.cmxa"
+  plugin(byte) = "oneret.cma"
+  plugin(native) = "oneret.cmxs"
+)
+package "partial" (
+  directory = "partial"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil tianshu-cil.pta"
+  archive(byte) = "partial.cma"
+  archive(native) = "partial.cmxa"
+  plugin(byte) = "partial.cma"
+  plugin(native) = "partial.cmxs"
+)
+package "pta" (
+  directory = "pta"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "ptranal.cma"
+  archive(native) = "ptranal.cmxa"
+  plugin(byte) = "ptranal.cma"
+  plugin(native) = "ptranal.cmxs"
+)
+package "sfi" (
+  directory = "sfi"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "sfi.cma"
+  archive(native) = "sfi.cmxa"
+  plugin(byte) = "sfi.cma"
+  plugin(native) = "sfi.cmxs"
+)
+package "simplemem" (
+  directory = "simplemem"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "simplemem.cma"
+  archive(native) = "simplemem.cmxa"
+  plugin(byte) = "simplemem.cma"
+  plugin(native) = "simplemem.cmxs"
+)
+package "simplify" (
+  directory = "simplify"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil"
+  archive(byte) = "simplify.cma"
+  archive(native) = "simplify.cmxa"
+  plugin(byte) = "simplify.cma"
+  plugin(native) = "simplify.cmxs"
+)
+package "zrapp" (
+  directory = "zrapp"
+  version = "2.0.0"
+  description = ""
+  requires = "stdlib-shims tianshu-cil tianshu-cil.liveness"
+  archive(byte) = "zrapp.cma"
+  archive(native) = "zrapp.cmxa"
+  plugin(byte) = "zrapp.cma"
+  plugin(native) = "zrapp.cmxs"
+)
+
+package "default-features" (
+requires="tianshu-cil.dataslicing tianshu-cil.liveness tianshu-cil.canonicalize tianshu-cil.ccl tianshu-cil.cqualann tianshu-cil.epicenter tianshu-cil.heapify tianshu-cil.inliner tianshu-cil.llvm tianshu-cil.logcalls tianshu-cil.logwrites tianshu-cil.oneret tianshu-cil.partial tianshu-cil.sfi tianshu-cil.simplemem tianshu-cil.simplify  tianshu-cil.pta tianshu-cil.zrapp "
+version = "2.0.0"
+)
+
+package "all-features" (
+requires="tianshu-cil.dataslicing tianshu-cil.liveness tianshu-cil.canonicalize tianshu-cil.ccl tianshu-cil.cqualann tianshu-cil.epicenter tianshu-cil.heapify tianshu-cil.inliner tianshu-cil.llvm tianshu-cil.logcalls tianshu-cil.logwrites tianshu-cil.oneret tianshu-cil.partial tianshu-cil.sfi tianshu-cil.simplemem tianshu-cil.simplify  tianshu-cil.pta tianshu-cil.zrapp "
+version = "2.0.0"
+)

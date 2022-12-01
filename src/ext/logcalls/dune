@@ -1,0 +1,6 @@
+(library
+  (public_name tianshu-cil.logcalls)
+  (name logcalls)
+  (libraries tianshu-cil stdlib-shims)
+  ;(flags (:standard -w -a))
+)

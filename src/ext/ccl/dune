@@ -1,0 +1,6 @@
+(library
+  (public_name tianshu-cil.ccl)
+  (name ccl)
+  (libraries tianshu-cil tianshu-cil.partial stdlib-shims)
+  ;(flags (:standard -w -a))
+)
