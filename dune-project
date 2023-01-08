@@ -2,11 +2,12 @@
 (name tianshu-cil)
 (implicit_transitive_deps false)
 (generate_opam_files true)
-(version 2.0.0)
-;(source (github goblint/cil))
-; (documentation "https://goblint.github.io/cil")
-(authors "George Necula" "Scott McPeak" "Westley Weimer" "Gabriel Kerneis" "Ralf Vogler" "Michael Schwarz" "Simmo Saan")
-(maintainers "Michael Schwarz <michael.schwarz93@gmail.com>" "Simmo Saan <simmo.saan@gmail.com>")
+(version b784182-dirty)
+(source (github gsfan15/tianshu-cil))
+(documentation "https://github.com/gsfan15/tianshu-cil")
+(homepage "https://github.com/gsfan15/tianshu-cil")
+(authors "Guangsheng Fan")
+(maintainers "Guangsheng Fan <guangshengfan@nudt.edu.cn>" )
 (license "BSD-3-Clause")
 
 (package
@@ -37,4 +38,5 @@ This is a fork of the 'cil' package used for 'goblint'. Major changes include:
     conf-gcc
   )
   (conflicts cil) ; only because we both install the cilly executable
+  
 )

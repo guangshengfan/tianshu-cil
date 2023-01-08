@@ -96,7 +96,9 @@ let adapt_filename f = try
 let findlib_lookup pkg =
   try
     let preds = [ if D.is_native then "native" else "byte"; "plugin" ] in
+    let cil_deps = F.package_deep_ancestors preds ["tianshu-cil"] in    (* fgs add *)
     let deps = F.package_deep_ancestors preds [pkg] in
+    let deps = List.filter (fun x -> not (List.mem x cil_deps)) deps in (* fgs add *)
     let find_modules pkg =
       let base = F.package_directory pkg in
       let archives =
