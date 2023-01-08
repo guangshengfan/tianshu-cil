@@ -1,4 +1,4 @@
-.TH "Semaphore.Counting" 3 2022-11-25 OCamldoc "OCaml library"
+.TH "Semaphore.Counting" 3 2022-12-05 OCamldoc "OCaml library"
 .SH NAME
 Semaphore.Counting \- no description
 .SH Module

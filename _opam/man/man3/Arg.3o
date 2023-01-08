@@ -1,4 +1,4 @@
-.TH "Arg" 3 2022-11-25 OCamldoc "OCaml library"
+.TH "Arg" 3 2022-12-05 OCamldoc "OCaml library"
 .SH NAME
 Arg \- Parsing of command line arguments.
 .SH Module

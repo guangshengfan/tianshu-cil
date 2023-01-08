@@ -24,6 +24,9 @@ module Bool = Stdune__Bool
 (** @canonical Stdune.Bytes *)
 module Bytes = Stdune__Bytes
 
+(** @canonical Stdune.Bytes_unit *)
+module Bytes_unit = Stdune__Bytes_unit
+
 (** @canonical Stdune.Caller_id *)
 module Caller_id = Stdune__Caller_id
 
@@ -224,3 +227,6 @@ module User_message = Stdune__User_message
 
 (** @canonical Stdune.User_warning *)
 module User_warning = Stdune__User_warning
+
+module Stdune__ = struct end
+[@@deprecated "this module is shadowed"]

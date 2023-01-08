@@ -1,3 +1,73 @@
+3.6.1 (2022-11-24)
+------------------
+
+- Fix status line enabled when ANSI colors are forced. (#6503, @MisterDA)
+
+- Fix build with MSVC compiler (#6517, @nojb)
+
+- Do not shadow library interface modules (#6549, fixes #6545, @rgrinberg)
+
+3.6.0 (2022-11-14)
+------------------
+
+- Forbid multiple instances of dune running concurrently in the same workspace.
+  (#6360, fixes #236, @rgrinberg)
+
+- Allow promoting into source directories specified by `subdir` (#6404, fixes
+  #3502, @rgrinberg)
+
+- Make dune describe workspace return the correct root path
+  (#6380, fixes #6379, @esope)
+
+- Introduce a `$ dune ocaml top-module` subcommand to load modules directly
+  without sealing them behind the signature. (#5940, @rgrinberg)
+
+- [ctypes] do not mangle user written names in the ctypes stanza (#6374, fixes
+  #5561, @rgrinberg)
+
+- Support `CLICOLOR` and `CLICOLOR_FORCE` to enable/disable/force ANSI
+  colors. (#6340, fixes #6323, @MisterDA).
+
+- Forbid private libraries with `(package ..)` set from depending on private
+  libraries that don't belong to a package (#6385, fixes #6153, @rgrinberg)
+
+- Allow `Byte_complete` binaries to be installable (#4873, @AltGr, @rgrinberg)
+
+- Revive `$ dune external-lib-deps` under `$ dune describe external-lib-deps`.
+  (#6045, @moyodiallo)
+
+- Fix running inline tests in bytecode mode (#5622, fixes #5515, @dariusf)
+
+- [ctypes] always re-run `pkg-config` because we aren't tracking its external
+  dependencies (#6052, @rgrinberg)
+
+- [ctypes] remove dependency on configurator in the generated rules (#6052,
+  @rgrinberg)
+
+- Build progress status now shows number of failed jobs (#6242, @Alizter)
+
+- Allow absolute build directories to find public executables. For example,
+  those specified with `(deps %{bin:...})` (#6326, @anmonteiro)
+
+- Create a fake socket file `_build/.rpc/dune` on windows to allow rpc clients
+  to connect using the build directory. (#6329, @rgrinberg)
+
+- Prevent crash if absolute paths are used in the install stanza and in
+  recursive globs. These cases now result in a user error. (#6331, @gridbugs)
+
+- Add `(glob_files <glob>)` and `(glob_files_rec <glob>)` terms to the `files`
+  field of the `install` stanza (#6250, closes #6018, @gridbugs)
+
+- Allow `:standard` in the `(modules)` field of the `coq.pp` stanza (#6229,
+  fixes #2414, @Alizter)
+
+- Fix passing of flags to dune coq top (#6369, fixes #6366, @Alizter)
+
+- Extend the promotion CLI to a `dune promotion` group: `dune promote` is moved
+  to `dune promotion apply` (the former still works) and the new `dune promotion
+  diff` command can be used to just display the promotion without applying it.
+  (#6160, fixes #5368, @emillon)
+
 3.5.0 (2022-10-19)
 ------------------
 
@@ -23,7 +93,7 @@
   It is enabled by setting terminal persistence to
   `clear-on-rebuild-and-flush-history` (#6065, @rgrinberg)
 
-- Disallow generating targets in sub direcories in inferred rules. The check to
+- Disallow generating targets in sub directories in inferred rules. The check to
   forbid this was accidentally done only for manually specified targets (#6031,
   @rgrinberg)
 
@@ -190,7 +260,7 @@
 - The `coq.theory` stanza now produces rules for running `coqdoc`. Given a
   theory named `mytheory`, the directory targets `mytheory.html/` and
   `mytheory.tex/` or additionally the aliases `@doc` and `@doc-latex` will
-  build the HTML and LaTeX documentation repsectively. (#5695, fixes #3760,
+  build the HTML and LaTeX documentation respectively. (#5695, fixes #3760,
   @Alizter)
 
 - Coq theories marked as `(boot)` cannot depend on other theories
@@ -517,7 +587,7 @@
   simpler and more reproducible (#4281, @jeremiedimino)
 
 - Remove the `external-lib-deps` command. This command was only
-  approximative and the cost of maintainance was getting too high. We
+  approximative and the cost of maintenance was getting too high. We
   removed it to make room for new more important features (#4298,
   @jeremiedimino)
 
@@ -1499,7 +1569,7 @@
   variable. (#2588, fix #2568, @rgrinberg)
 
 - Add a `forbidden_libraries` field to prevent some library from being
-  linked in an executable. This help detecting who accidently pulls in
+  linked in an executable. This help detecting who accidentally pulls in
   `unix` for instance (#2570, @diml)
 
 - Fix incorrect error message when a variable is expanded in static context:
@@ -1512,7 +1582,7 @@
 
 - Drop support for `jbuild` and `jbuild-ignore` files (#2607, @diml)
 
-- Add a `dune-action-plugin` library for describing dependencies direcly in
+- Add a `dune-action-plugin` library for describing dependencies directly in
   the executable source. Programs that use this feature can be run by a new
   action (dynamic-run <progn> ...). (#2635, @staronj, @aalekseyev)
 
@@ -1798,7 +1868,7 @@
 - Fix `chdir` on external and source paths. Dune will also fail gracefully if
   the external or source path does not exist (#2165, fixes #2158, @rgrinberg)
 
-- Support the `.cc` extension fro C++ sources (#2195, fixes #83, @rgrinberg)
+- Support the `.cc` extension for C++ sources (#2195, fixes #83, @rgrinberg)
 
 - Run `ocamlformat` relative to the context root. This improves the locations of
   errors. (#2196, fixes #1370, @rgrinberg)

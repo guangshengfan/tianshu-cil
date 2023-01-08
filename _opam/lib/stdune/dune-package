@@ -1,6 +1,6 @@
 (lang dune 3.5)
 (name stdune)
-(version 3.5.0)
+(version 3.6.1)
 (sections (lib .) (libexec .) (doc ../../doc/stdune) (stublibs ../stublibs))
 (files
  (lib
@@ -19,6 +19,8 @@
    bool.mli
    bytes.ml
    bytes.mli
+   bytes_unit.ml
+   bytes_unit.mli
    caller_id.ml
    caller_id.mli
    char.ml
@@ -167,6 +169,10 @@
    stdune__Bytes.cmt
    stdune__Bytes.cmti
    stdune__Bytes.cmx
+   stdune__Bytes_unit.cmi
+   stdune__Bytes_unit.cmt
+   stdune__Bytes_unit.cmti
+   stdune__Bytes_unit.cmx
    stdune__Caller_id.cmi
    stdune__Caller_id.cmt
    stdune__Caller_id.cmti
@@ -500,6 +506,11 @@
     ((name Bin) (obj_name stdune__Bin) (visibility public) (impl) (intf))
     ((name Bool) (obj_name stdune__Bool) (visibility public) (impl) (intf))
     ((name Bytes) (obj_name stdune__Bytes) (visibility public) (impl) (intf))
+    ((name Bytes_unit)
+     (obj_name stdune__Bytes_unit)
+     (visibility public)
+     (impl)
+     (intf))
     ((name Caller_id)
      (obj_name stdune__Caller_id)
      (visibility public)

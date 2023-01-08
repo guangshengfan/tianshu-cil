@@ -26,3 +26,6 @@ module Svar = Fiber__Svar
 
 (** @canonical Fiber.Throttle *)
 module Throttle = Fiber__Throttle
+
+module Fiber__ = struct end
+[@@deprecated "this module is shadowed"]

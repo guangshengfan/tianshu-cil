@@ -32,3 +32,6 @@ module Versioned = Dune_rpc_private__Versioned
 
 (** @canonical Dune_rpc_private.Where *)
 module Where = Dune_rpc_private__Where
+
+module Dune_rpc_private__ = struct end
+[@@deprecated "this module is shadowed"]

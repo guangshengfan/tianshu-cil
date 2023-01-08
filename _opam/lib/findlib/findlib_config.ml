@@ -3,9 +3,9 @@
  *
  *)
 
-let config_file = "/home/fgs/Desktop/tianshu-cil/_opam/lib/findlib.conf";;
+let config_file = "/home/fgs/tianshu-cil/_opam/lib/findlib.conf";;
 
-let ocaml_stdlib = "/home/fgs/Desktop/tianshu-cil/_opam/lib/ocaml";;
+let ocaml_stdlib = "/home/fgs/tianshu-cil/_opam/lib/ocaml";;
 
 let ocaml_ldconf = Filename.concat ocaml_stdlib "ld.conf";;
 

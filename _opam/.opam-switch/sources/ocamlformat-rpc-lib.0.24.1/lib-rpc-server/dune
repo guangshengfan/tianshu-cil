@@ -1,4 +1,0 @@
-(library
- (name ocamlformat_rpc)
- (public_name ocamlformat.rpc)
- (libraries ocamlformat ocamlformat.rpc_lib_protocol))

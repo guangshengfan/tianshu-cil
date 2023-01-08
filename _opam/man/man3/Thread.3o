@@ -1,4 +1,4 @@
-.TH "Thread" 3 2022-11-25 OCamldoc "OCaml library"
+.TH "Thread" 3 2022-12-05 OCamldoc "OCaml library"
 .SH NAME
 Thread \- Lightweight threads for Posix 1003.1c and Win32.
 .SH Module

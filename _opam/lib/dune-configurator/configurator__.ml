@@ -14,3 +14,6 @@ module Ocaml_config = Configurator__Ocaml_config
 
 (** @canonical Configurator.V1 *)
 module V1 = Configurator__V1
+
+module Configurator__ = struct end
+[@@deprecated "this module is shadowed"]

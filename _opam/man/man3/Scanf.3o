@@ -1,4 +1,4 @@
-.TH "Scanf" 3 2022-11-25 OCamldoc "OCaml library"
+.TH "Scanf" 3 2022-12-05 OCamldoc "OCaml library"
 .SH NAME
 Scanf \- Formatted input functions.
 .SH Module

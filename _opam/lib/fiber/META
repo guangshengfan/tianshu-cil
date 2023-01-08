@@ -1,4 +1,4 @@
-version = "3.5.0"
+version = "3.6.1"
 description = "Monadic concurrency library"
 requires = "dyn ordering pp stdune stdune.filesystem_stubs"
 archive(byte) = "fiber.cma"

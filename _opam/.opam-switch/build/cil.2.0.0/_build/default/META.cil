@@ -1,7 +1,0 @@
-version = "2.0.0"
-description = ""
-requires = "findlib num stdlib-shims"
-archive(byte) = "cil.cma"
-archive(native) = "cil.cmxa"
-plugin(byte) = "cil.cma"
-plugin(native) = "cil.cmxs"

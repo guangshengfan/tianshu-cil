@@ -690,6 +690,8 @@ module Build = struct
       if Local.is_root p then External.to_string b
       else Filename.concat (External.to_string b) (Local.to_string p)
 
+  let to_string_maybe_quoted p = String.maybe_quoted (to_string p)
+
   let of_local t = t
 
   let chmod t ~mode = Unix.chmod (to_string t) mode
@@ -707,6 +709,9 @@ module T : sig
 
   val to_dyn : t -> Dyn.t
 
+  (** [External _] < [In_source_tree _] < [In_build_dir _]
+
+      Path of the same kind are compared using the standard lexical order *)
   val compare : t -> t -> Ordering.t
 
   val equal : t -> t -> bool
@@ -730,8 +735,8 @@ end = struct
     | External _, _ -> Lt
     | _, External _ -> Gt
     | In_source_tree x, In_source_tree y -> Local.compare x y
-    | In_source_tree _, _ -> Lt
-    | _, In_source_tree _ -> Gt
+    | In_source_tree _, In_build_dir _ -> Lt
+    | In_build_dir _, In_source_tree _ -> Gt
     | In_build_dir x, In_build_dir y -> Local.compare x y
 
   let equal (x : t) (y : t) = x = y

@@ -1,6 +1,6 @@
 (lang dune 3.5)
 (name dyn)
-(version 3.5.0)
+(version 3.6.1)
 (sections (lib .) (libexec .) (doc ../../doc/dyn))
 (files
  (lib
