@@ -34,7 +34,7 @@ depends: [
 conflicts: ["cil"]
 build: [
   ["dune" "subst"] {dev}
-  ["dune" "build"]
+  #["dune" "build"]
   [
     "dune"
     "build"
