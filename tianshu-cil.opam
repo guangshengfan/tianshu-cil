@@ -19,7 +19,7 @@ homepage: "https://github.com/gsfan15/tianshu-cil"
 doc: "https://github.com/gsfan15/tianshu-cil"
 bug-reports: "https://github.com/gsfan15/tianshu-cil/issues"
 depends: [
-  "ocaml" {>= "4.05.0"}#
+  "ocaml" {>= "4.05.0"}
   "ocamlfind" {with-test}
   "num"
   "hevea" {with-doc}
@@ -34,7 +34,6 @@ depends: [
 conflicts: ["cil"]
 build: [
   ["dune" "subst"] {dev}
-  #["dune" "build"]
   [
     "dune"
     "build"
@@ -46,7 +45,6 @@ build: [
     "@runtest" {with-test}
     "@doc" {with-doc}
   ]
-  ["dune" "install"]
 ]
 dev-repo: "git+https://github.com/gsfan15/tianshu-cil.git"
 depexts: [
