@@ -1699,7 +1699,8 @@ let d_const () c =
          * integers in negative form. -- Gabriel *)
         E.s (E.bug "unexpected negative unsigned integer (please report this bug)")
       else
-        text (prefix ^ "0x" ^ Int64.format "%x" i ^ suffix)
+        text (prefix ^ "0x" ^ Int64.to_string  i ^ suffix)
+        (*text (prefix ^ "0x" ^ Int64.format "%x" i ^ suffix)*)
     else (
       if (i = mostNeg32BitInt) then
         (* sm: quirk here: if you print -2147483648 then this is two tokens *)
@@ -2716,8 +2717,8 @@ let parseInt (str: string) : exp =
     let l = String.length str in
     fun s ->
       let ls = String.length s in
-      (*l >= ls && s = String.uppercase_ascii (String.sub str (l - ls) ls)*)(***fgs***)
-			l >= ls && s = String.uppercase (String.sub str (l - ls) ls)
+      l >= ls && s = String.uppercase_ascii (String.sub str (l - ls) ls)(***fgs***)
+			(*l >= ls && s = String.uppercase (String.sub str (l - ls) ls)*)
   in
   let l = String.length str in
   (* See if it is octal or hex *)
@@ -4653,7 +4654,8 @@ class plainCilPrinterClass =
             CInt64(i, ik, so) ->
             let fmt = if isSigned ik then "%d" else "%x" in
             dprintf "Int64(%s,%a,%s)"
-              (Int64.format fmt i)
+              (*(Int64.format fmt i) *)
+              (Int64.to_string i)
               d_ikind ik
               (match so with Some s -> s | _ -> "None")
           | CStr(s) ->

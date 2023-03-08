@@ -1,6 +1,6 @@
 {
     "ocaml.sandbox": {
         "kind": "opam",
-        "switch": "${workspaceFolder:tianshu-cil}"
+        "switch": "5.0.0"
     }
 }
