@@ -2,7 +2,7 @@
 (name tianshu-cil)
 (implicit_transitive_deps false)
 (generate_opam_files true)
-(version b784182-dirty)
+(version 5.0)
 (source (github gsfan15/tianshu-cil))
 (documentation "https://github.com/gsfan15/tianshu-cil")
 (homepage "https://github.com/gsfan15/tianshu-cil")
